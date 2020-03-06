@@ -46,7 +46,7 @@ ordering: the current sort parameter
         {% trans 'Updated' as updated_label %}
         {% page_table_header_label label=updated_label sortable=sortable sort_field='latest_revision_created_at' parent_page_title=parent_page.title %}
     </th>
-    <th class="type">
+    <!-- <th class="type">
         {% trans 'Type' as type_label %}
 
         {% if sortable and sortable_by_type %}
@@ -54,7 +54,8 @@ ordering: the current sort parameter
         {% else %}
             {% page_table_header_label label=type_label sortable=0 parent_page_title=parent_page.title %}
         {% endif %}
-    </th>
+    </th> -->
+    <th>GA Metrics</th>
     <th class="status">
         {% trans 'Status' as status_label %}
         {% page_table_header_label label=status_label sortable=sortable sort_field='live' parent_page_title=parent_page.title %}
